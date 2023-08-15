@@ -1,0 +1,12 @@
+.my-dropdown:hover ul{
+    display: block;
+}
+#slider-img{
+    height: 450px;
+}
+.card img{
+    height: 200px;
+}
+.c-sec .card{
+    margin-bottom: 15px;
+}

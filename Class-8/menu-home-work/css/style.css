@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif, Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body{
+    height: 100vh;
+    background-image: url(background-image.jpg) ;
+    background-size:  cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(to right, rgba(219, 224, 154, 0.986), rgba(80, 219, 177));
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo img{
+    height: 50px;
+    width: 100%;
+}
+header .navbar ul{
+    list-style: none; 
+}
+header .navbar ul li{
+    position: relative; 
+    display: inline-block; 
+}
+header .navbar ul li a{
+    padding: 20px;
+    color: black;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background-color: crimson;
+    color: aliceblue;
+    border-radius: 10px;
+}
+header .navbar ul li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 150px;
+    background-color: rgb(80, 219, 177);
+    border-radius: 10px;
+}
+header .navbar ul li ul li{
+    width: 100%;
+}
+header .navbar ul li ul li ul{
+    left: 150px;
+    top: 0;
+}
+header .navbar ul li ul li .Contact{
+    left: -150px;
+    top: 0;
+}
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul{
+    display: initial;
+}

@@ -1,0 +1,36 @@
+
+
+.flag{
+    position: fixed;
+
+}
+.rec{
+    position: relative;
+    height: 300px;
+    width: 700px;
+    background-color: green;
+    left: 150px;
+    top: 150px;
+    box-shadow: 10px 10px 10px yellow;
+}
+.circle{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    border-radius: 50%;
+    top: 70px;
+    left: 230px;
+}
+body{
+    height: 1000vh;
+}
+.circle img{
+    position: absolute;
+    height: 80%;
+    width: 80%;
+    top: 15px;
+    left: 10px;
+}
+
+

@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family:Georgia, 'Times New Roman', Times, serif, Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+body{
+    height: 100vh; /* vh= vartical height ..... 1vh=10px */
+    background-color: aqua;
+    background-size:  cover;
+    background-position: center;
+}
+header{
+    position: fixed;
+    top: 0px;
+    /* bottom: ;  no need here*/
+    left: 0;
+    right: 0;
+    background-color: rgb(80, 219, 177);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+header .logo{
+    font-weight: 700;
+    font-size: 25px;
+    color: rgb(117, 26, 26);
+}
+.navbar{
+    padding: 0px !important;
+}
+header .navbar ul{
+    list-style: none; 
+    padding: 0px !important;
+    margin: 0px !important;
+}
+header .navbar ul li{
+    position: relative; /* movement based on the body */
+    display: inline-block; /* also u can use display float*/
+}
+header .navbar ul li a{
+    padding: 20px;
+    /* font-size: 20px; */
+    color: black;
+    display: block;
+}
+header .navbar ul li a:hover{
+    background-color: crimson;
+    color: aliceblue;
+}
+header .navbar ul li ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background-color: rgb(80, 219, 177);;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid black;
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+}
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul{
+    display: initial; /* also use display:block */
+}
+
+#menubar{
+    display: none;
+}
+header label{
+    display: none;
+    color: brown;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+@media(max-width:991px){
+    header label{
+        display: initial;
+
+    }
+    header label img{
+        height: 50px;
+        width: 50px;
+
+    }
+    header{
+        padding: 20px;
+    }
+    header .navbar{
+        display: none;
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        right: 0px;
+        background-color: antiquewhite;
+        border-top: 1px solid brown;
+    }
+    header .navbar ul li{
+        width: 100%;
+    }
+    header .navbar ul li ul{
+        width: 100%;
+        position: relative;
+    }
+    header .navbar ul li ul li{
+        background-color: burlywood;
+    }
+    header .navbar ul li ul li ul{
+        width: 100%;
+    }
+    #menubar:checked ~ .navbar{
+    display: initial;
+    }
+}
+
+.card{
+    height: 350px;
+    width: 18rem;
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 200px;
+    box-shadow: 0 0 10px crimson;
+}
+.card .card-header, .card-body{
+    height: 150px;
+    width: 100%;
+    border-bottom: 2px solid crimson;
+} /*
+.card .card-body{
+    height: 150px;
+    width: 100%;
+    border-bottom: 2px solid crimson;
+} */
+.card .card-footer{
+    height: 50px;
+    width: 100%;
+}
+.btn{
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 2px solid;
+    padding: 10px;
+    margin-top: 4px;
+    margin-left: 15px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.btn-primary{
+    border: 2px solid cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: 700;
+    transition: .5s;
+}
+.btn-primary:hover{
+    border: 2px solid rgb(72, 132, 243);
+    background-color: rgb(72, 132, 243);
+}
+.carousel{
+    top: 71px
+}
+.slider .row .col-12{
+    padding: 0px !important;
+}
+.carousel-item img{
+    height: 50px;
+}
+
+
